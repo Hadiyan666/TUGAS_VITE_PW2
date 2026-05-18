@@ -1,0 +1,141 @@
+/* Hubungkan dengan Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Background gradient yang smooth */
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  padding: 20px;
+}
+
+/* Card dengan efek Glassmorphism */
+.profile-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 40px;
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  color: #ffffff;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+/* Avatar inisial nama */
+.avatar {
+  width: 90px;
+  height: 90px;
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 20px;
+  font-size: 2rem;
+  font-weight: 700;
+  box-shadow: 0 4px 15px rgba(255, 65, 108, 0.4);
+}
+
+.name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+  letter-spacing: 0.5px;
+}
+
+.job {
+  font-size: 1rem;
+  color: #00f2fe;
+  font-weight: 300;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.info-section {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  font-size: 0.95rem;
+}
+
+/* Styling Tombol dengan Animasi Hover & Active */
+.btn-zodiac {
+  width: 100%;
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+  border: none;
+  padding: 14px;
+  border-radius: 12px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 114, 255, 0.3);
+}
+
+.btn-zodiac:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 114, 255, 0.5);
+  filter: brightness(1.1);
+}
+
+.btn-zodiac:active {
+  transform: translateY(1px);
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 30px 0;
+}
+
+/* List Film */
+.movies-section h3 {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  text-align: left;
+  color: #f1c40f;
+}
+
+.movie-list {
+  list-style: none;
+}
+
+.movie-item {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 12px 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+  border-left: 4px solid #f1c40f;
+  transition: background 0.2s ease;
+}
+
+.movie-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.movie-title {
+  display: block;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.movie-meta {
+  font-size: 0.8rem;
+  color: #b2bec3;
+}
